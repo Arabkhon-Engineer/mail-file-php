@@ -14,7 +14,7 @@
         enctype="multipart/form-data"
         class="form"
       >
-        <input type="text" name="name" placeholder="name" class="form_input" />
+        <input type="text" name="name" placeholder="name" class="form_input" /><br>
         <input
           type="email"
           name="email"
@@ -24,20 +24,48 @@
         <div class="form_options options_form">
           <h4 class="option_form_title">Do you like Code Only?</h4>
           <label class="option_form_item">
-            <input type="radio" checked name="like" value="Yes!" class="options_form_input">
+            <input
+              type="radio"
+              checked
+              name="like"
+              value="Yes!"
+              class="options_form_input"
+            />
             <span class="options_form_text">Yes!</span>
           </label>
           <label class="option_form_item">
-            <input type="radio" checked name="like" value="Yes of Course!" class="options_form_input">
+            <input
+              type="radio"
+              checked
+              name="like"
+              value="Yes of Course!"
+              class="options_form_input"
+            />
             <span class="options_form_text">Yes of Course!</span>
           </label>
         </div>
-        <textarea name="message" class="form_input" placeholder="Message"></textarea>
+        <textarea
+          name="message"
+          class="form_input"
+          placeholder="Message"
+        ></textarea>
         <div class="form_file file_form">
-            <label  class="file_form_item">
-                
-            </label>
+          <label class="file_form_item">
+            <input
+              type="file"
+              name="image"
+              accept=".jpg, .png, .jpeg, .pdf, .ppt, .mp4 "
+              class="file_form_input"
+            />
+            <div class="file_form_button button">Choose file</div>
+          </label>
+          <div class="file_form_name"></div>
         </div>
+        <label class="form_checkbox checkbox_form">
+            <input type="checkbox" name="thebest" class="checkbox_form_input">
+            <span class="checkbox_form_text">Code Only the best channel in the world</span>
+        </label>
+        <button class="form_button button" type="submit">Send</button>
       </form>
     </div>
 
