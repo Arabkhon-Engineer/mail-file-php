@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send HTML-Form to email</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form
+        action="src/index.php"
+        method="post"
+        enctype="multipart/form-data"
+        class="form"
+      >
+        <input type="text" name="name" placeholder="name" class="form_input" />
+        <input
+          type="email"
+          name="email"
+          placeholder="E-mail"
+          class="form_input"
+        />
+        <div class="form_options options_form">
+          <h4 class="option_form_title">Do you like Code Only?</h4>
+          <label class="option_form_item">
+            <input type="radio" checked name="like" value="Yes!" class="options_form_input">
+            <span class="options_form_text">Yes!</span>
+          </label>
+          <label class="option_form_item">
+            <input type="radio" checked name="like" value="Yes of Course!" class="options_form_input">
+            <span class="options_form_text">Yes of Course!</span>
+          </label>
+        </div>
+        <textarea name="message" class="form_input" placeholder="Message"></textarea>
+        <div class="form_file file_form">
+            <label  class="file_form_item">
+                
+            </label>
+        </div>
+      </form>
+    </div>
+
+    <script src="./src/index.js"></script>
+  </body>
+</html>
